@@ -47,9 +47,13 @@ const AboutSection = () => {
           <div className="md:w-1/3 flex justify-center">
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
-                {/* Replace with your image */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center text-6xl">
-                  👨‍💻
+                {/* Real image instead of placeholder */}
+                <div className="w-full h-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&h=800" 
+                    alt="Developer portrait" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-background rounded-full p-3 shadow-lg">

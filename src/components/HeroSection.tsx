@@ -13,7 +13,12 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-hero-pattern"
+      className="min-h-screen flex flex-col justify-center relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=2000&q=80)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       {/* Background Decorations */}
       <div className="absolute top-0 left-0 right-0 h-full overflow-hidden">
@@ -29,16 +34,16 @@ const HeroSection = () => {
             }`}
           >
             <p className="text-primary font-medium mb-3">Hey there, I'm</p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
               Crisantos
               <span className="text-primary">.</span>
             </h1>
-            <h2 className="text-2xl md:text-4xl font-medium mb-6 text-foreground/80">
+            <h2 className="text-2xl md:text-4xl font-medium mb-6 text-white/90">
               I'm a {" "}
               <span className="text-primary font-bold">Full-Stack Developer</span> who
               builds exceptional digital experiences.
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mb-8">
+            <p className="text-lg text-white/80 max-w-2xl mb-8">
               I specialize in creating beautiful, functional, and responsive web 
               applications with modern technologies. Let's bring your ideas to life.
             </p>
@@ -50,7 +55,7 @@ const HeroSection = () => {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
                 <a href="#contact">Contact me</a>
               </Button>
             </div>
@@ -60,7 +65,7 @@ const HeroSection = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground/70 hover:text-primary transition-colors"
+                className="text-white/70 hover:text-primary transition-colors"
                 aria-label="GitHub profile"
               >
                 <Github className="h-6 w-6" />
@@ -69,7 +74,7 @@ const HeroSection = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground/70 hover:text-primary transition-colors"
+                className="text-white/70 hover:text-primary transition-colors"
                 aria-label="LinkedIn profile"
               >
                 <Linkedin className="h-6 w-6" />
@@ -81,8 +86,8 @@ const HeroSection = () => {
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <a href="#about" aria-label="Scroll down">
-          <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex justify-center pt-1">
-            <div className="w-1 h-2 bg-foreground/30 rounded-full animate-pulse-slow"></div>
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-1">
+            <div className="w-1 h-2 bg-white/30 rounded-full animate-pulse-slow"></div>
           </div>
         </a>
       </div>
