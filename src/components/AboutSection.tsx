@@ -29,7 +29,7 @@ const AboutSection = () => {
     { name: "Node.js", icon: "🛠️" },
     { name: "TypeScript", icon: "🔷" },
     { name: "Next.js", icon: "⚡" },
-    { name: "Tailwind CSS", icon: "🎨" },
+    { name: "Tailwind", icon: "🎨" },
     { name: "MongoDB", icon: "🍃" },
     { name: "PostgreSQL", icon: "🐘" },
     { name: "GraphQL", icon: "⚛️" },
@@ -90,7 +90,7 @@ const AboutSection = () => {
                     style={{ animationDelay: `${(index + 1) * 0.1}s` }}
                   >
                     <span className="text-2xl mr-2">{tech.icon}</span>
-                    <span className="font-medium">{tech.name}</span>
+                    <span className="font-medium truncate">{tech.name}</span>
                   </div>
                 ))}
               </div>

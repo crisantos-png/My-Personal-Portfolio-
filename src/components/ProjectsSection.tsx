@@ -28,13 +28,21 @@ const ProjectsSection = () => {
 
   const projects: ProjectProps[] = [
     {
+      title: "ShopExpress - E-commerce Platform",
+      description: "A full-featured online shopping platform with product catalog, cart, payment processing, and user accounts.",
+      tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Redux"],
+      image: placeholderImage,
+      demo: "https://example.com/shopexpress",
+      github: "https://github.com/crisantos/shopexpress",
+      featured: true,
+    },
+    {
       title: "Portfolio Website",
       description: "A responsive portfolio website built with React and Tailwind CSS.",
       tags: ["React", "Tailwind CSS", "Vite"],
       image: placeholderImage,
       demo: "https://example.com",
       github: "https://github.com",
-      featured: true,
     },
     {
       title: "E-commerce Dashboard",
@@ -68,6 +76,22 @@ const ProjectsSection = () => {
       demo: "https://example.com",
       github: "https://github.com",
     },
+    {
+      title: "Personal Blog",
+      description: "A blog platform built with Next.js and markdown content.",
+      tags: ["Next.js", "MDX", "Tailwind CSS", "Vercel"],
+      image: placeholderImage,
+      demo: "https://example.com/blog",
+      github: "https://github.com/crisantos/blog",
+    },
+    {
+      title: "Real-time Chat Application",
+      description: "A real-time messaging application with private and group chats.",
+      tags: ["React", "Socket.io", "Express", "MongoDB"],
+      image: placeholderImage,
+      demo: "https://example.com/chat",
+      github: "https://github.com/crisantos/chat-app",
+    }
   ];
 
   return (

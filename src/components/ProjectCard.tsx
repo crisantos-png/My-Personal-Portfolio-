@@ -12,6 +12,7 @@ export interface ProjectProps {
   demo?: string;
   github?: string;
   featured?: boolean;
+  className?: string; // Add className to fix the TypeScript error
 }
 
 const ProjectCard = ({
@@ -22,6 +23,7 @@ const ProjectCard = ({
   demo,
   github,
   featured = false,
+  className,
 }: ProjectProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -29,7 +31,8 @@ const ProjectCard = ({
     <div
       className={cn(
         "group rounded-lg overflow-hidden border border-border bg-card shadow-md transition-all duration-300 hover:shadow-lg relative",
-        featured ? "md:col-span-2" : ""
+        featured ? "md:col-span-2" : "",
+        className
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
