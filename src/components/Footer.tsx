@@ -9,10 +9,10 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-xl font-bold font-heading">
               <span className="text-primary">Crisantos</span>
-              <span className="text-secondary">.</span>
+              <span className="text-secondary">Inc.</span>
             </a>
             <p className="mt-2 text-foreground/60 max-w-md">
-              Full-Stack Developer specializing in building exceptional digital experiences.
+              Full-Stack Development Agency specializing in building exceptional digital experiences.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:contact@crisantos.dev"
                 className="text-foreground/70 hover:text-primary transition-colors"
                 aria-label="Email me"
               >
@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-foreground/60">
-              © {new Date().getFullYear()} Crisantos. All rights reserved.
+              © {new Date().getFullYear()} Crisantos Inc. All rights reserved.
             </p>
           </div>
         </div>
