@@ -27,6 +27,15 @@ const ProjectsSection = () => {
 
   const projects: ProjectProps[] = [
     {
+      title: "SolarLink 2026",
+      description: "A solar energy equipment marketplace connecting suppliers with customers for sustainable energy solutions.",
+      tags: ["React", "Firebase", "Tailwind CSS", "E-commerce"],
+      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1200&h=800",
+      demo: "https://solarlink2026.web.app",
+      github: "https://github.com/crisantos/solarlink",
+      featured: true,
+    },
+    {
       title: "ShopExpress - E-commerce Platform",
       description: "A full-featured online shopping platform with product catalog, cart, payment processing, and user accounts.",
       tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Redux"],
