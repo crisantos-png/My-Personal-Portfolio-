@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, ShoppingBag } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -42,6 +42,15 @@ const Footer = () => {
                 aria-label="Email me"
               >
                 <Mail className="h-5 w-5" />
+              </a>
+              <a
+                href="https://solarlink2026.web.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/70 hover:text-primary transition-colors"
+                aria-label="Shop website"
+              >
+                <ShoppingBag className="h-5 w-5" />
               </a>
             </div>
             <p className="text-sm text-foreground/60">

@@ -44,25 +44,7 @@ const AboutSection = () => {
             isVisible ? "opacity-100" : "opacity-0 translate-y-10"
           )}
         >
-          <div className="md:w-1/3 flex justify-center">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
-                {/* Real image instead of placeholder */}
-                <div className="w-full h-full overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&h=800" 
-                    alt="Developer portrait" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-background rounded-full p-3 shadow-lg">
-                <span className="text-4xl">🚀</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:w-2/3">
+          <div className="md:w-full">
             <h2 className="text-3xl font-bold mb-6 flex items-center">
               About Me
               <div className="h-1 w-10 bg-primary ml-4"></div>
